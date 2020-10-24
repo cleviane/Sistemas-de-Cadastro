@@ -1,0 +1,16 @@
+create database dbsistema;
+use dbsistema;
+create table tbusuarios(iduser int primary key,
+usuario varchar (50) not null,
+fone varchar(50),
+login varchar(15) not null unique,
+senha varchar(15) not null,
+perfil varchar(20) not null);
+insert into tbusuarios(iduser,usuario,fone,login,senha,perfil) 
+values
+ (1,'Administrador','99999-9999','admin','123456','admin');
+ create table clientes(idcli int primary key auto_increment,
+nomecli varchar(50) not null,
+ endcli varchar (100), fonecli varchar(50) not null,
+ emaicli varchar(50));
+ 
